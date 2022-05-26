@@ -1,0 +1,30 @@
+.menuArea{
+  height: 100vh;
+}
+
+.areaFlex>div{
+  justify-content: center;
+  display: flex;
+}
+
+.methodArea{
+  background-color: #fff;
+  height: 100vh;
+}
+
+.phraseSpan{
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+.buttonVerify{
+  margin-left: 5%;
+}
+
+.titleMargin{
+  margin-left: 3%;
+}
+
+.string-span{
+  font-size: 1.2rem;
+}

@@ -1,0 +1,26 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+body, html{
+  height: 100%;
+}
+body{
+  margin: 0;
+  background-image: url('../../netlex-front/assets/images/unsplash_m_7p45JfXQo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+
+li{
+  list-style: none;
+  font-size: 1.2rem;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.capitalize{
+  text-transform: capitalize;
+}

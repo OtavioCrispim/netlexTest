@@ -1,0 +1,43 @@
+section{
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.modalLogin{
+  background-color: #fff;
+  width: 27vw;
+  margin: auto;
+  height: 480px;
+  border-radius: 10px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+}
+
+.loginTitle{
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.lineLoginTitle{
+  height: 80px;
+  width: 100%;
+  border-bottom: 1px solid;
+  padding-top: 15px;
+  padding-left: 30px;
+  border-color: rgb(231, 229, 229);
+}
+
+.inputTitle{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.toast{
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+}

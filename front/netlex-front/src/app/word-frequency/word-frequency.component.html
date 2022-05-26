@@ -1,0 +1,41 @@
+<div class="d-flex">
+
+  <div class="col-1 areaFlex">
+    <div class="col-md-12 mt-5">
+      <button class="btn btn-outline-light" [routerLink]="'/word-frequency'">Método 1</button>
+    </div>
+
+    <div class="col-md-12 mt-3">
+      <button class="btn btn-outline-light" [routerLink]="'/word-sentences'">Método 2</button>
+    </div>
+
+    <div class="col-md-12 mt-3">
+      <button class="btn btn-outline-light" [routerLink]="'/top-words'">Método 3</button>
+    </div>
+  </div>
+
+  <div class="col-11 methodArea">
+    <div class="d-flex ml-5 mt-5">
+      <h3 class="titleMargin">Método 1</h3>
+    </div>
+
+    <div class="d-flex buttonVerify">
+      <div class="col-8 mt-5">
+        <span class="phraseSpan">Digite uma palavra</span>
+        <input type="text" class="form-control mt-3" [(ngModel)]="inputString">
+      </div>
+
+    </div>
+
+    <div class="d-flex mt-3 buttonVerify">
+      <div class="col-md-3">
+        <button class="btn btn-primary" (click)="getWordFrequncy()">Verificar</button>
+      </div>
+    </div>
+
+    <div class="d-flex mt-4 buttonVerify">
+      <span *ngIf="dataSource >= 0" class="mb-4 string-span">A palavra <span class="bold">{{resultString}}</span> foi encontrada em {{dataSource}} frases no texto.</span>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,33 @@
+<form [formGroup]="login" (ngSubmit)="checkLogin()">
+  <section>
+    <div class="modalLogin">
+      <div class="lineLoginTitle">
+        <span class="loginTitle">Login</span>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-8 mt-5">
+          <span class="inputTitle">E-mail</span>
+          <input class="form-control mt-2" type="text" [(ngModel)]="user" formControlName="user"/>
+          <!-- <span *ngIf="validEmail" class="btn btn-danger w-100 m-0">Insira um e-mail valido!</span> -->
+        </div>
+        <div class="col-md-8 mt-5">
+          <span class="inputTitle">Senha</span>
+          <input class="form-control mt-2" type="password" [(ngModel)]="password" formControlName="password"/>
+        </div>
+        <div  class="col-md-8 mt-5">
+          <button class="btn btn-primary w-100 inputTitle mt-4" type="submit">Entrar</button>
+        </div>
+        <!-- <div *ngIf="validEmail" class="col-md-8 mt-4">
+          <button class="btn btn-primary w-100 inputTitle " type="submit">Entrar</button>
+        </div> -->
+      </div>
+    </div>
+  </section>
+  <ngb-toast class="toast bg-danger text-light" *ngIf="validEmail" (hide)="validEmail = false">
+    Insira um e-mail valido!
+  </ngb-toast>
+</form>
+
+
+
+
